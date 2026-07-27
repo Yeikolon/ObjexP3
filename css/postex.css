@@ -1,0 +1,245 @@
+/* ============================================================
+   POSTEX — Mobile First
+   ============================================================ */
+
+#postex {
+    text-decoration: underline;
+}
+
+.info {
+    font-size: 1rem;
+    color: rgb(146, 148, 150);
+    margin-bottom: 10px;
+}
+
+/* Búsqueda: columna en móvil */
+.generico form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+}
+
+.generico form input,
+.generico form select {
+    margin-bottom: 0;
+}
+
+.generico form .boton-bonito {
+    width: 100%;
+}
+
+/* Contenedor de posts */
+#contenedor-anuncios {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Card de post: sin márgenes laterales grandes en móvil */
+.card-post {
+    margin: 0;
+    border: 2px solid #ddd;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: white;
+    overflow: hidden; 
+    max-width: 100%;  
+}
+
+.post-encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.post-encabezado img {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.post-encabezado label {
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.nombre {
+    color: gray;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.fecha {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.card-post p {
+    background-color: #003b27;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-wrap: break-word; 
+}
+
+/* Pie del post: íconos centrados con espacio */
+.post-pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    gap: 30px;               
+    font-size: 1.2rem;     
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;        
+}
+
+.post-pie i {
+    cursor: pointer;
+    padding: 8px 12px;      
+    color: #003b27;
+    font-size: 1.2rem;      
+}
+
+.post-pie span {
+    font-size: 0.9rem;      
+    color: #555;
+}
+
+/* Eliminar post */
+.eliminar-post {
+    color: #c62828 !important;
+    margin-left: auto;
+    font-size: 1rem;
+}
+
+.eliminar-post i {
+    color: #c62828 !important;
+    padding: 4px 8px !important;
+    font-size: 1rem !important;
+}
+
+/* Paginación */
+#paginas {
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+#paginas a {
+    display: inline-block;
+    padding: 10px 14px;
+    min-width: 44px;
+    min-height: 44px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+/* Modal nuevo post */
+.modal-objex {
+    border-radius: 16px;
+    border: none;
+}
+
+.modal-objex .modal-header {
+    background-color: #003b27;
+    color: white;
+    border-radius: 16px 16px 0 0;
+}
+
+.modal-objex .btn-close {
+    filter: invert(1);
+}
+
+.btn-close-objex {
+    background-color: #ebe6e6;
+    color: #003b27;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 14px;
+    margin-top: 0;
+    min-height: 44px;
+}
+
+i {
+    color: #003b27;
+}
+
+/* ============================================================
+   TABLET (≥ 768px)
+   ============================================================ */
+
+@media (min-width: 768px) {
+
+    .info {
+        font-size: 1.1rem;
+    }
+
+    .generico form {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .generico form input {
+        flex: 1;
+        min-width: 160px;
+    }
+
+    .generico form select {
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .generico form .boton-bonito {
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .card-post {
+        margin: 0 5%;
+        padding: 20px;
+    }
+
+    .post-pie {
+        justify-content: center;
+        gap: 60px;          
+        font-size: 1.4rem;
+    }
+}
+
+/* ============================================================
+   DESKTOP (≥ 992px)
+   ============================================================ */
+
+@media (min-width: 992px) {
+
+    .card-post {
+        margin: 0 10%;
+        padding: 3%;
+    }
+
+    .post-pie {
+        gap: 120px;         
+        font-size: 1.6rem;
+    }
+
+    .info {
+        font-size: 1.2rem;
+    }
+}

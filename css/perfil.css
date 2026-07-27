@@ -1,0 +1,164 @@
+/* ============================================================
+   PERFIL — Mobile First
+   ============================================================ */
+
+#perfil-contenedor {
+    color: black;
+}
+
+/* Tarjeta de perfil: ocupa todo el ancho en móvil */
+.contenedor-perfil {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.card-perfil {
+    background-color: white;
+    padding: 24px 16px;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.card-perfil img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+}
+
+/* Botones de acción: apilados en móvil */
+.card-perfil section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-perfil section:last-of-type .boton-bonito {
+    width: 100%;
+}
+
+/* Tabla de publicaciones */
+#publicados {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.img-publicado {
+    height: 70px;
+    width: 70px;
+    padding: 4px;
+    object-fit: cover;
+}
+
+.eliminar {
+    background-color: rgb(236, 121, 121);
+    color: white;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.editar {
+    background-color: rgb(89, 89, 241);
+    color: white;
+    width: 100%;
+}
+
+.meter-objex {
+    accent-color: #003b27;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Modal */
+.modal-objex {
+    border-radius: 16px;
+    border: none;
+}
+
+.modal-objex .modal-header {
+    background-color: #003b27;
+    color: white;
+    border-radius: 16px 16px 0 0;
+}
+
+.modal-objex .btn-close {
+    filter: invert(1);
+}
+
+.btn-close-objex {
+    background-color: #ebe6e6;
+    color: #003b27;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 14px;
+    margin-top: 0;
+    min-height: 44px;
+}
+
+/* ============================================================
+   TABLET (≥ 768px)
+   ============================================================ */
+
+@media (min-width: 768px) {
+
+    .card-perfil {
+        width: 460px;
+        padding: 32px 28px;
+    }
+
+    .card-perfil section:last-of-type {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-perfil section:last-of-type .boton-bonito {
+        width: auto;
+    }
+
+    .img-publicado {
+        height: 90px;
+        width: 90px;
+    }
+
+    .eliminar,
+    .editar {
+        width: auto;
+    }
+
+    
+    #publicados {
+        display: table;
+    }
+}
+
+/* ============================================================
+   DESKTOP (≥ 992px)
+   ============================================================ */
+
+@media (min-width: 992px) {
+    .card-perfil {
+        width: 480px;
+        padding: 40px;
+    }
+
+    .img-publicado {
+        height: 100px;
+        width: 100px;
+        padding: 7px;
+    }
+
+   
+    #publicados {
+        display: table;
+        width: 100%;
+    }
+}

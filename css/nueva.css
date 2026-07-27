@@ -1,0 +1,49 @@
+/* ============================================================
+   NUEVA PUBLICACIÓN — Mobile First
+   ============================================================ */
+
+.contenedor-nueva {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.card-nueva {
+    background-color: white;
+    padding: 24px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 16px;
+}
+
+/* Botón publicar: full-width en móvil */
+.card-nueva .boton-bonito {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ============================================================
+   TABLET (≥ 768px)
+   ============================================================ */
+
+@media (min-width: 768px) {
+    .card-nueva {
+        width: 520px;
+        padding: 36px 32px;
+    }
+
+    .card-nueva .boton-bonito {
+        width: auto;
+    }
+}
+
+/* ============================================================
+   DESKTOP (≥ 992px)
+   ============================================================ */
+
+@media (min-width: 992px) {
+    .card-nueva {
+        width: 560px;
+        padding: 40px;
+    }
+}

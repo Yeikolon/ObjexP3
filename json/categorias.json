@@ -1,0 +1,9 @@
+[
+  { "id": 1, "nombre": "Tecnología", "valor": "tecnologia", "icono": "fa-solid fa-laptop", "descripcion": "Dispositivos electrónicos, cargadores, memorias y accesorios tecnológicos." },
+  { "id": 2, "nombre": "Objetos químicos", "valor": "quimica", "icono": "fa-solid fa-flask", "descripcion": "Batas, guantes, gafas de laboratorio y material de uso químico." },
+  { "id": 3, "nombre": "Herramientas", "valor": "herramienta", "icono": "fa-solid fa-screwdriver-wrench", "descripcion": "Herramientas manuales y equipo técnico usado en talleres o laboratorios." },
+  { "id": 4, "nombre": "Accesorios", "valor": "accessorio", "icono": "fa-solid fa-bag-shopping", "descripcion": "Mochilas, bolsos, prendas de vestir y artículos personales." },
+  { "id": 5, "nombre": "Objeto de valor", "valor": "valor", "icono": "fa-solid fa-gem", "descripcion": "Documentos, credenciales, dinero, joyas u objetos de alto valor." },
+  { "id": 6, "nombre": "Cosas de agro", "valor": "agro", "icono": "fa-solid fa-seedling", "descripcion": "Herramientas, muestras o insumos relacionados con carreras agropecuarias." },
+  { "id": 7, "nombre": "Otros", "valor": "otros", "icono": "fa-solid fa-box", "descripcion": "Elementos que no encajan en las demás categorías." }
+]

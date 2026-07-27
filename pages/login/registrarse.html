@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Objex - Registro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../src/icons/lupa.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/general.css" rel="stylesheet">
+    <link href="../../css/registrarse.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-objex">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">Objex</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navObjex"
+                    aria-controls="navObjex" aria-expanded="false" aria-label="Mostrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navObjex">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#"><i class="fa-solid fa-list"></i> Publicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#"><i class="fa-solid fa-blog"></i> Postex</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <section class="contenedor-login">
+            <section class="card-login">
+
+                <h2>Registro</h2>
+
+                <p>Crea una cuenta para publicar y contactar dentro de Objex.</p>
+
+                <form method="post" action="#" class="logeo" id="form-registro">
+
+                    <label for="nombre">Nombres</label>
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
+
+                    <label for="apellido">
+                        Apellidos
+                    </label>
+
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos">
+
+                    <label for="cedula">
+                        Cédula
+                    </label>
+
+                    <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula" minlength="10"
+                        maxlength="10">
+
+                    <label for="genero">
+                        Género
+                    </label>
+
+                    <select id="genero" name="genero">
+
+                        <option value="masculino">
+                            Masculino
+                        </option>
+
+                        <option value="femenino">
+                            Femenino
+                        </option>
+
+                    </select>
+
+                    <label for="correo">
+                        Correo institucional
+                    </label>
+
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@espe.edu.ec">
+
+                    <label for="contrasena">
+                        Contraseña
+                    </label>
+
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña"
+                        minlength="8" maxlength="16">
+
+                    <label for="confirmar">
+                        Confirmar contraseña
+                    </label>
+
+                    <input type="password" id="confirmar" name="confirmar" placeholder="Repita su contraseña"
+                        minlength="8" maxlength="16">
+
+                    <label for="fechaNacimiento">
+                        Fecha de nacimiento
+                    </label>
+
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+
+                    <label for="buscarPais">
+                        Nacionalidad
+                    </label>
+
+                    <input type="text" id="buscarPais" placeholder="Escribe para buscar tu país" autocomplete="off">
+                    <input type="hidden" id="nacionalidad" name="nacionalidad">
+                    <div id="listaPaises" class="lista-paises"></div>
+                    <p id="paisSeleccionado" class="pais-seleccionado"></p>
+
+                    <label for="avatar">
+                        Foto de perfil (opcional)
+                    </label>
+
+                    <input type="text" id="avatar" name="avatar" placeholder="src/img/mifoto.jpg">
+
+                    <div class="terminos">
+                        <input type="checkbox" id="terminos" name="terminos">
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+
+                    <button type="submit" class="boton-bonito">
+                        Crear cuenta
+                    </button>
+
+                    <p class="registro-texto">
+
+                        ¿Ya tienes cuenta?
+
+                        <a href="../../index.html">
+                            Iniciar sesión
+                        </a>
+
+                    </p>
+
+                </form>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../../js/storage.js"></script>
+    <script src="../../js/utils.js"></script>
+    <script src="../../js/registro.js"></script>
+</body>
+
+</html>
