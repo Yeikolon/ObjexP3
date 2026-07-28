@@ -1,6 +1,5 @@
 /* ============================================================
    REGISTRARSE — Mobile First
-   (reutiliza la misma estructura que index/login)
    ============================================================ */
 
 .contenedor-login {
@@ -15,15 +14,148 @@
     width: 100%;
     text-align: center;
     border-radius: 16px;
+    position: relative;
+    overflow: visible;
 }
 
 .logeo {
     margin-top: 12px;
+    position: relative;
 }
 
 .registro-texto {
     font-size: 0.9rem;
     margin-top: 12px;
+}
+
+/* ============================================================
+   SELECTOR DE PAÍSES - VERSIÓN CORREGIDA
+   ============================================================ */
+
+/* Contenedor padre para posicionamiento */
+.campo-pais {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la lista de países - ABSOLUTO para superponerse */
+.lista-paises {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 4px;
+}
+
+/* Clase para mostrar la lista */
+.lista-paises.mostrar {
+    display: block;
+}
+
+/* Cada opción de país */
+.pais-opcion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.pais-opcion:last-child {
+    border-bottom: none;
+}
+
+.pais-opcion:hover {
+    background-color: #e8f5e9;
+}
+
+.pais-opcion img {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+.pais-opcion span {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* País seleccionado (mensaje de confirmación) */
+.pais-seleccionado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #003b27;
+    border: 1px solid #c8e6c9;
+}
+
+.pais-seleccionado img {
+    width: 28px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+/* Estilo para el input de búsqueda de países */
+#buscarPais {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 15px;
+    margin-bottom: 0px;
+}
+
+#buscarPais:focus {
+    outline: 2px solid #003b27;
+    border-color: #003b27;
+}
+
+/* Ocultar el input hidden de nacionalidad */
+#nacionalidad {
+    display: none;
+}
+
+/* Scroll personalizado para la lista de países */
+.lista-paises::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lista-paises::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.lista-paises::-webkit-scrollbar-thumb {
+    background: #003b27;
+    border-radius: 10px;
+}
+
+.lista-paises::-webkit-scrollbar-thumb:hover {
+    background: #002b1d;
 }
 
 /* ============================================================
@@ -35,6 +167,10 @@
         width: 480px;
         padding: 36px 32px;
     }
+
+    .lista-paises {
+        max-height: 250px;
+    }
 }
 
 /* ============================================================
@@ -45,5 +181,9 @@
     .card-login {
         width: 500px;
         padding: 40px;
+    }
+
+    .lista-paises {
+        max-height: 300px;
     }
 }

@@ -260,7 +260,7 @@ function renderDestacados() {
   inner.innerHTML = destacados.map((p, i) => {
     const ubicacion = obtenerUbicacion(p.ubicacionId);
     
-    // ✅ CORREGIDO: Validar imagen para el carrusel también
+
     let imagenSrc = "../../src/icons/usuario.png";
     if (p.imagen) {
       if (p.imagen.startsWith("src/")) {
@@ -300,7 +300,7 @@ function mostrarDetallePublicacion(id) {
   const ubicacion = obtenerUbicacion(publicacion.ubicacionId);
   const usuario = obtenerUsuario(publicacion.usuarioId);
 
-  // ✅ CORREGIDO: Validar imagen para el detalle
+
   let imagenSrc = "../../src/icons/usuario.png";
   if (publicacion.imagen) {
     if (publicacion.imagen.startsWith("src/")) {

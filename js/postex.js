@@ -117,11 +117,12 @@ function renderTarjetasPostex(lista) {
 
   contenedor.innerHTML = pagina.map(p => {
     const autor = obtenerAutor(p.usuarioId);
-    
-   
+    const sesion = obtenerSesion();
+    const likesUsuario = sesion ? obtenerLikesDeUsuario(sesion.id) : [];
+    const yaLikeado = likesUsuario.includes(p.id);
+
     let avatar = "../../src/icons/usuario.png";
     if (autor && autor.avatar) {
-      // Si la ruta ya comienza con "src/", solo agregamos "../.."
       if (autor.avatar.startsWith("src/")) {
         avatar = "../../" + autor.avatar;
       } else if (autor.avatar.startsWith("../../")) {
@@ -130,8 +131,9 @@ function renderTarjetasPostex(lista) {
         avatar = "../../src/icons/usuario.png";
       }
     }
-    
+
     const nombreAutor = autor ? `${autor.nombres} ${autor.apellidos}` : "Usuario ESPE";
+    const claseLike = yaLikeado ? "fa-solid fa-heart text-danger" : "fa-regular fa-heart";
 
     return `
       <section class="card-post" data-id="${p.id}">
@@ -147,7 +149,7 @@ function renderTarjetasPostex(lista) {
         </div>
         <div class="post-pie">
           <div>
-            <i class="fa-regular fa-heart me-like" data-id="${p.id}"></i>
+            <i class="${claseLike} me-like" data-id="${p.id}" style="${yaLikeado ? "color:#dc3545;" : ""}"></i>
             <span class="contador-likes">${p.likes}</span>
           </div>
           <div>
@@ -204,8 +206,24 @@ function renderPaginacionPostex(totalResultados) {
 
 /* --------- Like --------- */
 function manejarLike(id) {
+  const sesion = obtenerSesion();
+  if (!sesion) {
+    mostrarError("Debes iniciar sesión para dar like a un anuncio.");
+    return;
+  }
+
   const post = estadoPostex.posts.find(p => p.id === id);
   if (!post) return;
+
+  const resultado = registrarLikeUsuario(sesion.id, id);
+  if (!resultado.ok) {
+    if (resultado.motivo === "ya_likeado") {
+      mostrarError("Ya has dado like a este anuncio.");
+    } else {
+      mostrarError("No se pudo registrar el like. Intenta nuevamente.");
+    }
+    return;
+  }
 
   post.likes += 1;
   guardarFeedPostex();

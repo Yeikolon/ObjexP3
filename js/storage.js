@@ -11,7 +11,7 @@ const OBJEX_DB = {
   ubicaciones: "objex_ubicaciones",
   usuarios: "objex_usuarios",
   publicaciones: "objex_publicaciones",
-  sesion: "objex_sesion" // usuario actualmente logeado (no es una colección JSON)
+  sesion: "objex_sesion" 
 };
 
 /**
@@ -61,6 +61,57 @@ function guardarColeccion(clave, datos) {
     console.error(`Error al guardar la colección "${clave}":`, error);
     return false;
   }
+}
+
+function obtenerLikesPorUsuario() {
+  try {
+    const guardado = localStorage.getItem("objex_likes_usuarios");
+    if (!guardado) return {};
+
+    const datos = JSON.parse(guardado);
+    return datos && typeof datos === "object" ? datos : {};
+  } catch (error) {
+    console.error("Error al leer likes de usuarios:", error);
+    return {};
+  }
+}
+
+function guardarLikesPorUsuario(datos) {
+  try {
+    localStorage.setItem("objex_likes_usuarios", JSON.stringify(datos));
+    return true;
+  } catch (error) {
+    console.error("Error al guardar likes de usuarios:", error);
+    return false;
+  }
+}
+
+function obtenerLikesDeUsuario(usuarioId) {
+  const likesPorUsuario = obtenerLikesPorUsuario();
+  const likes = likesPorUsuario[usuarioId];
+  return Array.isArray(likes) ? likes : [];
+}
+
+function registrarLikeUsuario(usuarioId, postId) {
+  if (!usuarioId || !postId) {
+    return { ok: false, motivo: "datos_invalidos" };
+  }
+
+  const likesPorUsuario = obtenerLikesPorUsuario();
+  const likesActuales = Array.isArray(likesPorUsuario[usuarioId]) ? likesPorUsuario[usuarioId] : [];
+
+  if (likesActuales.includes(postId)) {
+    return { ok: false, motivo: "ya_likeado" };
+  }
+
+  likesActuales.push(postId);
+  likesPorUsuario[usuarioId] = likesActuales;
+
+  if (!guardarLikesPorUsuario(likesPorUsuario)) {
+    return { ok: false, motivo: "no_guardado" };
+  }
+
+  return { ok: true, likes: likesActuales };
 }
 
 /**
