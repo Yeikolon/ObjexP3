@@ -1,22 +1,324 @@
-[
-  { "id": 1, "nombres": "Yeiko", "apellidos": "Vélez", "correo": "yeiko@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/img/Yo.jpeg", "confiabilidad": 50, "fechaRegistro": "2026-01-15", "nacionalidad": "Ecuador", "contacto": { "telefono": "0991234567", "ciudad": "Santo Domingo" } },
-  { "id": 2, "nombres": "Heung Min", "apellidos": "Son", "correo": "hson@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/chino.ico", "confiabilidad": 80, "fechaRegistro": "2026-01-20", "nacionalidad": "Corea del Sur", "contacto": { "telefono": "0987651234", "ciudad": "Quito" } },
-  { "id": 3, "nombres": "Axel Josué", "apellidos": "Molina Vera", "correo": "ajmolina@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/chambeo.ico", "confiabilidad": 65, "fechaRegistro": "2026-01-22", "nacionalidad": "Ecuador", "contacto": { "telefono": "0978451236", "ciudad": "Santo Domingo" } },
-  { "id": 4, "nombres": "Ruth Estefany", "apellidos": "Briones Moreira", "correo": "rebriones@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 40, "fechaRegistro": "2026-01-25", "nacionalidad": "Ecuador", "contacto": { "telefono": "0965478912", "ciudad": "Quevedo" } },
-  { "id": 5, "nombres": "Keonjae Matías", "apellidos": "Lee Franco", "correo": "kmlee@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 90, "fechaRegistro": "2026-01-28", "nacionalidad": "Ecuador", "contacto": { "telefono": "0954789632", "ciudad": "Quito" } },
-  { "id": 6, "nombres": "Elkin", "apellidos": "Ramírez", "correo": "eramirez@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 55, "fechaRegistro": "2026-02-01", "nacionalidad": "Colombia", "contacto": { "telefono": "0943216789", "ciudad": "Santo Domingo" } },
-  { "id": 7, "nombres": "Anahí", "apellidos": "Torres", "correo": "atorres@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 60, "fechaRegistro": "2026-02-03", "nacionalidad": "Ecuador", "contacto": { "telefono": "0932165498", "ciudad": "Luz de América" } },
-  { "id": 8, "nombres": "Jhon", "apellidos": "Herrera", "correo": "jherrera@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 45, "fechaRegistro": "2026-02-05", "nacionalidad": "Ecuador", "contacto": { "telefono": "0921456789", "ciudad": "Santo Domingo" } },
-  { "id": 9, "nombres": "Camila", "apellidos": "Zambrano", "correo": "czambrano@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 75, "fechaRegistro": "2026-02-08", "nacionalidad": "Ecuador", "contacto": { "telefono": "0912457896", "ciudad": "Quevedo" } },
-  { "id": 10, "nombres": "Mateo", "apellidos": "Salazar", "correo": "msalazar@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 30, "fechaRegistro": "2026-02-10", "nacionalidad": "Ecuador", "contacto": { "telefono": "0998745632", "ciudad": "Santo Domingo" } },
-  { "id": 11, "nombres": "Doménica", "apellidos": "Vera", "correo": "dvera@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 85, "fechaRegistro": "2026-02-12", "nacionalidad": "Ecuador", "contacto": { "telefono": "0987456123", "ciudad": "Quito" } },
-  { "id": 12, "nombres": "Bryan", "apellidos": "Chávez", "correo": "bchavez@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 20, "fechaRegistro": "2026-02-14", "nacionalidad": "Ecuador", "contacto": { "telefono": "0976541239", "ciudad": "Santo Domingo" } },
-  { "id": 13, "nombres": "Valentina", "apellidos": "Andrade", "correo": "vandrade@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 70, "fechaRegistro": "2026-02-16", "nacionalidad": "Ecuador", "contacto": { "telefono": "0965123478", "ciudad": "Quevedo" } },
-  { "id": 14, "nombres": "Steven", "apellidos": "Paredes", "correo": "sparedes@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 95, "fechaRegistro": "2026-02-18", "nacionalidad": "Ecuador", "contacto": { "telefono": "0954123698", "ciudad": "Santo Domingo" } },
-  { "id": 15, "nombres": "Nayeli", "apellidos": "Cedeño", "correo": "ncedeno@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 58, "fechaRegistro": "2026-02-20", "nacionalidad": "Ecuador", "contacto": { "telefono": "0943126789", "ciudad": "Quito" } },
-  { "id": 16, "nombres": "Josué", "apellidos": "Macías", "correo": "jmacias@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 42, "fechaRegistro": "2026-02-22", "nacionalidad": "Ecuador", "contacto": { "telefono": "0932187654", "ciudad": "Santo Domingo" } },
-  { "id": 17, "nombres": "Emily", "apellidos": "Rodríguez", "correo": "erodriguez@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 67, "fechaRegistro": "2026-02-24", "nacionalidad": "Ecuador", "contacto": { "telefono": "0921987456", "ciudad": "Quevedo" } },
-  { "id": 18, "nombres": "Kevin", "apellidos": "Alcívar", "correo": "kalcivar@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 33, "fechaRegistro": "2026-02-26", "nacionalidad": "Ecuador", "contacto": { "telefono": "0912765498", "ciudad": "Santo Domingo" } },
-  { "id": 19, "nombres": "Fernanda", "apellidos": "Loor", "correo": "floor@espe.edu.ec", "contrasena": "admin123", "genero": "femenino", "avatar": "src/icons/usuario.png", "confiabilidad": 78, "fechaRegistro": "2026-02-28", "nacionalidad": "Ecuador", "contacto": { "telefono": "0998123456", "ciudad": "Quito" } },
-  { "id": 20, "nombres": "Diego", "apellidos": "Mera", "correo": "dmera@espe.edu.ec", "contrasena": "admin123", "genero": "masculino", "avatar": "src/icons/usuario.png", "confiabilidad": 51, "fechaRegistro": "2026-03-02", "nacionalidad": "Ecuador", "contacto": { "telefono": "0987234561", "ciudad": "Santo Domingo" } }
-]
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombres": "Yeiko",
+      "apellidos": "Vélez",
+      "correo": "yeiko@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/img/Yo.jpeg",
+      "confiabilidad": 50,
+      "fechaRegistro": "2026-01-15",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0991234567",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 2,
+      "nombres": "Heung Min",
+      "apellidos": "Son",
+      "correo": "hson@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/chino.ico",
+      "confiabilidad": 80,
+      "fechaRegistro": "2026-01-20",
+      "nacionalidad": "Corea del Sur",
+      "contacto": {
+        "telefono": "0987651234",
+        "ciudad": "Quito"
+      }
+    },
+    {
+      "id": 3,
+      "nombres": "Axel Josué",
+      "apellidos": "Molina Vera",
+      "correo": "ajmolina@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/chambeo.ico",
+      "confiabilidad": 65,
+      "fechaRegistro": "2026-01-22",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0978451236",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 4,
+      "nombres": "Ruth Estefany",
+      "apellidos": "Briones Moreira",
+      "correo": "rebriones@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 40,
+      "fechaRegistro": "2026-01-25",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0965478912",
+        "ciudad": "Quevedo"
+      }
+    },
+    {
+      "id": 5,
+      "nombres": "Keonjae Matías",
+      "apellidos": "Lee Franco",
+      "correo": "kmlee@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 90,
+      "fechaRegistro": "2026-01-28",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0954789632",
+        "ciudad": "Quito"
+      }
+    },
+    {
+      "id": 6,
+      "nombres": "Elkin",
+      "apellidos": "Ramírez",
+      "correo": "eramirez@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 55,
+      "fechaRegistro": "2026-02-01",
+      "nacionalidad": "Colombia",
+      "contacto": {
+        "telefono": "0943216789",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 7,
+      "nombres": "Anahí",
+      "apellidos": "Torres",
+      "correo": "atorres@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 60,
+      "fechaRegistro": "2026-02-03",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0932165498",
+        "ciudad": "Luz de América"
+      }
+    },
+    {
+      "id": 8,
+      "nombres": "Jhon",
+      "apellidos": "Herrera",
+      "correo": "jherrera@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 45,
+      "fechaRegistro": "2026-02-05",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0921456789",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 9,
+      "nombres": "Camila",
+      "apellidos": "Zambrano",
+      "correo": "czambrano@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 75,
+      "fechaRegistro": "2026-02-08",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0912457896",
+        "ciudad": "Quevedo"
+      }
+    },
+    {
+      "id": 10,
+      "nombres": "Mateo",
+      "apellidos": "Salazar",
+      "correo": "msalazar@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 30,
+      "fechaRegistro": "2026-02-10",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0998745632",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 11,
+      "nombres": "Doménica",
+      "apellidos": "Vera",
+      "correo": "dvera@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 85,
+      "fechaRegistro": "2026-02-12",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0987456123",
+        "ciudad": "Quito"
+      }
+    },
+    {
+      "id": 12,
+      "nombres": "Bryan",
+      "apellidos": "Chávez",
+      "correo": "bchavez@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 20,
+      "fechaRegistro": "2026-02-14",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0976541239",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 13,
+      "nombres": "Valentina",
+      "apellidos": "Andrade",
+      "correo": "vandrade@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 70,
+      "fechaRegistro": "2026-02-16",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0965123478",
+        "ciudad": "Quevedo"
+      }
+    },
+    {
+      "id": 14,
+      "nombres": "Steven",
+      "apellidos": "Paredes",
+      "correo": "sparedes@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 95,
+      "fechaRegistro": "2026-02-18",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0954123698",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 15,
+      "nombres": "Nayeli",
+      "apellidos": "Cedeño",
+      "correo": "ncedeno@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 58,
+      "fechaRegistro": "2026-02-20",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0943126789",
+        "ciudad": "Quito"
+      }
+    },
+    {
+      "id": 16,
+      "nombres": "Josué",
+      "apellidos": "Macías",
+      "correo": "jmacias@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 42,
+      "fechaRegistro": "2026-02-22",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0932187654",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 17,
+      "nombres": "Emily",
+      "apellidos": "Rodríguez",
+      "correo": "erodriguez@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 67,
+      "fechaRegistro": "2026-02-24",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0921987456",
+        "ciudad": "Quevedo"
+      }
+    },
+    {
+      "id": 18,
+      "nombres": "Kevin",
+      "apellidos": "Alcívar",
+      "correo": "kalcivar@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 33,
+      "fechaRegistro": "2026-02-26",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0912765498",
+        "ciudad": "Santo Domingo"
+      }
+    },
+    {
+      "id": 19,
+      "nombres": "Fernanda",
+      "apellidos": "Loor",
+      "correo": "floor@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "femenino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 78,
+      "fechaRegistro": "2026-02-28",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0998123456",
+        "ciudad": "Quito"
+      }
+    },
+    {
+      "id": 20,
+      "nombres": "Diego",
+      "apellidos": "Mera",
+      "correo": "dmera@espe.edu.ec",
+      "contrasena": "admin123",
+      "genero": "masculino",
+      "avatar": "src/icons/usuario.png",
+      "confiabilidad": 51,
+      "fechaRegistro": "2026-03-02",
+      "nacionalidad": "Ecuador",
+      "contacto": {
+        "telefono": "0987234561",
+        "ciudad": "Santo Domingo"
+      }
+    }
+  ]
+}

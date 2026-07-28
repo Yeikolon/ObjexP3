@@ -1,12 +1,64 @@
-[
-  { "id": 1, "nombre": "Toda la universidad", "valor": "toda", "icono": "fa-solid fa-map" },
-  { "id": 2, "nombre": "Área de estudio", "valor": "estudio", "icono": "fa-solid fa-book" },
-  { "id": 3, "nombre": "Bar", "valor": "bar", "icono": "fa-solid fa-mug-saucer" },
-  { "id": 4, "nombre": "Estacionamiento", "valor": "estacionamiento", "icono": "fa-solid fa-square-parking" },
-  { "id": 5, "nombre": "Aula del bloque A", "valor": "aulaA", "icono": "fa-solid fa-chalkboard" },
-  { "id": 6, "nombre": "Aula del bloque B", "valor": "aulaB", "icono": "fa-solid fa-chalkboard" },
-  { "id": 7, "nombre": "Laboratorio bloque A", "valor": "labA", "icono": "fa-solid fa-flask-vial" },
-  { "id": 8, "nombre": "Laboratorio bloque B", "valor": "labB", "icono": "fa-solid fa-flask-vial" },
-  { "id": 9, "nombre": "Pasillos", "valor": "pasillos", "icono": "fa-solid fa-person-walking" },
-  { "id": 10, "nombre": "Otra", "valor": "otra", "icono": "fa-solid fa-location-dot" }
-]
+{
+  "ubicaciones": [
+    {
+      "id": 1,
+      "nombre": "Toda la universidad",
+      "valor": "toda",
+      "icono": "fa-solid fa-map"
+    },
+    {
+      "id": 2,
+      "nombre": "Área de estudio",
+      "valor": "estudio",
+      "icono": "fa-solid fa-book"
+    },
+    {
+      "id": 3,
+      "nombre": "Bar",
+      "valor": "bar",
+      "icono": "fa-solid fa-mug-saucer"
+    },
+    {
+      "id": 4,
+      "nombre": "Estacionamiento",
+      "valor": "estacionamiento",
+      "icono": "fa-solid fa-square-parking"
+    },
+    {
+      "id": 5,
+      "nombre": "Aula del bloque A",
+      "valor": "aulaA",
+      "icono": "fa-solid fa-chalkboard"
+    },
+    {
+      "id": 6,
+      "nombre": "Aula del bloque B",
+      "valor": "aulaB",
+      "icono": "fa-solid fa-chalkboard"
+    },
+    {
+      "id": 7,
+      "nombre": "Laboratorio bloque A",
+      "valor": "labA",
+      "icono": "fa-solid fa-flask-vial"
+    },
+    {
+      "id": 8,
+      "nombre": "Laboratorio bloque B",
+      "valor": "labB",
+      "icono": "fa-solid fa-flask-vial"
+    },
+    {
+      "id": 9,
+      "nombre": "Pasillos",
+      "valor": "pasillos",
+      "icono": "fa-solid fa-person-walking"
+    },
+    {
+      "id": 10,
+      "nombre": "Otra",
+      "valor": "otra",
+      "icono": "fa-solid fa-location-dot"
+    }
+  ]
+}
