@@ -28,6 +28,17 @@ let estadoPub = {
 
 let miGrafico = null;
 
+function normalizarColeccionLocal(datos) {
+  if (Array.isArray(datos)) return datos;
+
+  if (datos && typeof datos === "object") {
+    const clave = Object.keys(datos).find(k => Array.isArray(datos[k]));
+    return clave ? datos[clave] : [];
+  }
+
+  return [];
+}
+
 document.addEventListener("DOMContentLoaded", iniciarPublicaciones);
 
 async function iniciarPublicaciones() {
@@ -41,10 +52,10 @@ async function iniciarPublicaciones() {
       cargarColeccion(RUTAS_PUB.publicaciones, OBJEX_DB.publicaciones)
     ]);
 
-    estadoPub.categorias = categorias;
-    estadoPub.ubicaciones = ubicaciones;
-    estadoPub.usuarios = usuarios;
-    estadoPub.publicaciones = publicaciones;
+    estadoPub.categorias = normalizarColeccionLocal(categorias);
+    estadoPub.ubicaciones = normalizarColeccionLocal(ubicaciones);
+    estadoPub.usuarios = normalizarColeccionLocal(usuarios);
+    estadoPub.publicaciones = normalizarColeccionLocal(publicaciones);
 
     poblarSelect("categoria", categorias, "todos", "Todas las categorías");
     poblarSelect("ubicacion", ubicaciones, "toda", "Toda la universidad");
@@ -65,8 +76,9 @@ function poblarSelect(idSelect, coleccion, valorTodos, textoTodos) {
   const select = document.getElementById(idSelect);
   if (!select) return;
 
+  const lista = normalizarColeccionLocal(coleccion);
   select.innerHTML = `<option value="${valorTodos}">${textoTodos}</option>`;
-  coleccion.forEach(item => {
+  lista.forEach(item => {
     const opcion = document.createElement("option");
     opcion.value = item.valor;
     opcion.textContent = item.nombre;

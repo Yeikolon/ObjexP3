@@ -21,12 +21,28 @@ const OBJEX_DB = {
  * @param {string} clave - clave de OBJEX_DB a usar en localStorage
  * @returns {Promise<Array>} arreglo de datos
  */
+function normalizarColeccion(datos) {
+  if (Array.isArray(datos)) return datos;
+
+  if (datos && typeof datos === "object") {
+    const claves = Object.keys(datos);
+    const claveArray = claves.find(k => Array.isArray(datos[k]));
+
+    if (claveArray) {
+      return datos[claveArray];
+    }
+  }
+
+  return [];
+}
+
 async function cargarColeccion(rutaJson, clave) {
   const guardado = localStorage.getItem(clave);
 
   if (guardado) {
     try {
-      return JSON.parse(guardado);
+      const datos = JSON.parse(guardado);
+      return normalizarColeccion(datos);
     } catch (error) {
       console.error(`Error al parsear ${clave} desde localStorage:`, error);
       localStorage.removeItem(clave);
@@ -41,8 +57,9 @@ async function cargarColeccion(rutaJson, clave) {
     }
 
     const datos = await respuesta.json();
-    localStorage.setItem(clave, JSON.stringify(datos));
-    return datos;
+    const coleccionNormalizada = normalizarColeccion(datos);
+    localStorage.setItem(clave, JSON.stringify(coleccionNormalizada));
+    return coleccionNormalizada;
 
   } catch (error) {
     console.error(`Error al cargar la colección "${clave}":`, error);
